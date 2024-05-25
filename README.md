@@ -1,5 +1,5 @@
 # Vector Product
-This repository contains a Python script that calculates the cross product and dot product of two 3D vectors. The script prompts the user to enter the components of the vectors and then computes the cross product and dot product using the entered values.
+This repository contains a Python script that calculates the addition, subtraction, cross product and dot product of two 3D vectors. The script prompts the user to enter the components of the vectors and then computes the addition, subtraction, cross product and dot product using the entered values.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -34,7 +34,7 @@ python vector_product.py
 
 Follow the prompts to enter the components of the two vectors.
 
-The script will output the cross product and dot product of the two vectors.
+The script will output the addition, subtraction, cross product and dot product of the two vectors.
 
 ## Contributing
 Contributions are welcome! If you would like to contribute to this project, feel free to open an issue or submit a pull request.
