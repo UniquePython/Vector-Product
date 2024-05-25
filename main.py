@@ -15,6 +15,18 @@ def dot_product(v1, v2):
         result += v1[i] * v2[i]
     return result
 
+def vector_addition(v1, v2):
+    result = [0, 0, 0]
+    for i in range(3):
+        result[i] = v1[i] + v2[i]
+    return result
+
+def vector_subtraction(v1, v2):
+    result = [0, 0, 0]
+    for i in range(3):
+        result[i] = v1[i] - v2[i]
+    return result
+
 def get_vector(prompt):
     while True:
         try:
@@ -32,8 +44,13 @@ def main():
 
     cross_vector = cross_product(v1, v2)
     dot_vector = dot_product(v1, v2)
+    add_vector = vector_addition(v1, v2)
+    sub_vector = vector_subtraction(v1, v2)
+
     print(Fore.YELLOW + f"\nThe cross product of the two vectors is: {cross_vector}" + Style.RESET_ALL)
     print(Fore.YELLOW + f"The dot product of the two vectors is: {dot_vector}" + Style.RESET_ALL)
+    print(Fore.YELLOW + f"The addition of the two vectors is: {add_vector}" + Style.RESET_ALL)
+    print(Fore.YELLOW + f"The subtraction of the two vectors is: {sub_vector}" + Style.RESET_ALL)
 
 if __name__ == "__main__":
     main()
